@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+         xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+           
+    android:layout_height="match_parent">
+    
+   
+    
+ 
+        
+ 
+    <ScrollView 
+            android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        
+            <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+               >
+    
+    
+     <TextView
+             android:id="@+id/current_day"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="26dp"
+             android:textColor="@android:color/white"
+             android:text="Today"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+         
+
+         <ImageView
+             android:id="@+id/current_day_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/current_day"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/clouds" />
+         
+            <TextView
+             android:id="@+id/current_temp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:textColor="@android:color/white"
+             android:layout_below="@id/current_day_image"  
+             android:layout_centerHorizontal="true"
+             
+             android:text="28°C"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <LinearLayout 
+                android:id="@+id/next_4_days_layout"
+                 android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+           android:layout_marginLeft="35dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+             android:layout_below="@id/current_temp"
+             android:orientation="horizontal">
+                
+                <TextView
+             android:id="@+id/day2"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Wed"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                 <TextView
+             android:id="@+id/day3"
+             
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Thur"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                 
+                  <TextView
+             android:id="@+id/day4"
+           
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Fri"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                  
+                  
+                    <TextView
+             android:id="@+id/day5"
+             android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Sat"
+            
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                
+               
+    
+                
+                
+            </LinearLayout>
+            
+            
+              <LinearLayout 
+                android:id="@+id/next_4_days_img_layout"
+                 android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+             android:layout_below="@id/next_4_days_layout"
+             android:orientation="horizontal">
+                    
+                   <ImageView
+             android:id="@+id/day2_image"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+            
+             android:src="@drawable/partly_cloudy" />
+                   
+                    <ImageView
+             android:id="@+id/day3_image"
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+            
+             android:src="@drawable/partly_cloudy" />
+                    
+                     <ImageView
+             android:id="@+id/day4_image"
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             
+             
+             android:src="@drawable/fog_day" />
+                     
+                      <ImageView
+             android:id="@+id/current_day5_image"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+            
+             android:src="@drawable/fog_day" />
+                    
+                  </LinearLayout>
+                  
+              
+               <LinearLayout 
+                android:id="@+id/next_4_days_temp_layout"
+                 android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+           android:layout_marginLeft="35dp"
+            android:layout_marginRight="0dp"
+             android:layout_below="@id/next_4_days_img_layout"
+             android:orientation="horizontal">
+                
+                <TextView
+             android:id="@+id/temp_day2"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="38°C"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                 <TextView
+             android:id="@+id/temp_day3"
+              android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="38°C"
+             
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                 
+                  <TextView
+             android:id="@+id/temp_day4"
+           
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="38°C"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                  
+                  
+                    <TextView
+             android:id="@+id/temp_day5"
+            
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="40°C"
+             android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                
+               
+    
+                
+                
+            </LinearLayout>
+            
+                <RelativeLayout 
+                             android:id="@+id/visited_rella"
+                              android:layout_below="@id/next_4_days_temp_layout"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true">
+            
+                         <TextView
+             android:id="@+id/best_visited"
+          
+             android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_marginTop="25dp"
+             android:layout_centerHorizontal="true"
+             android:text="Best Visited In"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                         
+                        
+                         
+                         
+                   <LinearLayout 
+                android:id="@+id/best_visited_days"
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/best_visited"
+             android:orientation="horizontal">
+                
+              <!--   <TextView
+             android:id="@+id/m1"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+               android:textColor="@android:color/white"
+             android:layout_weight="1"
+             android:text="Sep"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                 <TextView
+             android:id="@+id/m2"
+              android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Oct"
+             
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                 
+                  <TextView
+             android:id="@+id/m3"
+            android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Nov"
+             
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                  
+                  
+               
+                
+                
+               --> 
+    
+                
+                
+            </LinearLayout>
+            
+                   
+                     <LinearLayout 
+                android:id="@+id/best_visited_days2"
+                 android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+               android:paddingTop="10dp"
+             android:layout_below="@id/best_visited_days"
+             android:orientation="horizontal">
+                
+                         <!--  
+                <TextView
+             android:id="@+id/m4"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Dec"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                 <TextView
+             android:id="@+id/m5"
+              android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Jan"
+             
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                 
+                  <TextView
+             android:id="@+id/m6"
+            android:textColor="@android:color/white"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Feb"
+             
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                  
+                  
+               
+                
+                
+               
+    
+                
+                -->
+            </LinearLayout>
+            
+                     
+                      <LinearLayout 
+                android:id="@+id/best_visited_days3"
+                 android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+          android:paddingTop="10dp"
+             android:layout_below="@id/best_visited_days2"
+             android:orientation="horizontal">
+                
+                          <!--  
+                <TextView
+             android:id="@+id/m7"
+             android:layout_height="wrap_content"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Mar"
+              android:textColor="@android:color/white"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                 
+                
+                
+               
+    
+                -->
+                
+            </LinearLayout>
+            
+                      </RelativeLayout>
+                      
+                
+                 <RelativeLayout 
+                             android:id="@+id/cardsrel"
+                              android:layout_below="@id/visited_rella"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true">
+                      
+                      <android.support.v7.widget.CardView
+        android:id="@+id/activity_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#70CCCCCC"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+ 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:background="@android:color/transparent">
+ 
+            <TextView
+                android:id="@+id/activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:minWidth="88dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="Activites"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    
+                      <android.support.v7.widget.CardView
+        android:id="@+id/hotels_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@id/activity_card_view"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#70CCCCCC"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+ 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:background="@android:color/transparent">
+ 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minWidth="88dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hotels"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+                      
+    
+                      
+                    
+           
+       
+
+    </RelativeLayout>
+    
+            
+            <RelativeLayout 
+                             android:id="@+id/cardsrel2"
+                              android:layout_below="@id/cardsrel"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true">
+                      
+                      <android.support.v7.widget.CardView
+        android:id="@+id/eatries_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#70CCCCCC"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+ 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:background="@android:color/transparent">
+ 
+            <TextView
+                android:id="@+id/eatries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minWidth="88dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                android:singleLine="true"
+                android:text="Itineraries"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    
+                      <android.support.v7.widget.CardView
+        android:id="@+id/getting_here_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@id/eatries_card_view"
+       
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#70CCCCCC"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+ 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+               android:background="@android:color/transparent">
+ 
+            <TextView
+                android:id="@+id/getting_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minWidth="88dp"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="Getting Here"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+                      
+    
+                      
+                    
+           </RelativeLayout>
+       
+
+    
+            
+            
+   
+    </RelativeLayout>                 
+    
+    
+                       </ScrollView> 
+
+        
+      
+    
+    </RelativeLayout>
+
+   

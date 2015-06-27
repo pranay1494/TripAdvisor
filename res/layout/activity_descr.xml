@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ScrollView
+               android:id="@+id/scrollView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/plc_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/newdelhi" />
+    
+     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/white_navi"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_alignBottom="@id/plc_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-32dp"
+        />
+     
+     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/camera"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_toLeftOf="@id/navigation"
+        android:layout_alignBottom="@id/plc_image"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="-32dp"
+        />
+     
+     
+     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/video"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_toLeftOf="@id/photos"
+        android:layout_alignBottom="@id/plc_image"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="-32dp"
+        />
+     
+     
+     
+
+     <TextView
+         android:id="@+id/plc_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/plc_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+         android:text="Large Text"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+     
+     <TextView 
+            android:id="@+id/plc_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plc_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Shopping"
+            android:textColor="#FF5722"/>
+         
+         <TextView 
+            android:id="@+id/op_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plc_type"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+             android:layout_marginTop="5dp"
+            android:text="Open Hours "
+            android:textStyle="normal"
+            />
+
+           <TextView 
+            android:id="@+id/op_hrs_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/op_hrs"
+            android:layout_below="@id/plc_type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="08h 00m to 22h 00m"
+            android:textStyle="normal"
+            />
+           
+           <TextView 
+            android:id="@+id/fair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/op_hrs"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Entry Fee"
+            android:textColor="#FF5722"/>
+           
+           <TextView 
+            android:id="@+id/fair_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fair"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Free"
+            />
+           
+           <TextView 
+            android:id="@+id/photography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fair_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Photography Fee"
+            android:textColor="#FF5722"/>
+
+           
+           <TextView 
+            android:id="@+id/photography_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photography"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Free"
+            />
+           
+           <TextView 
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/photography_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT"
+            android:textColor="#FF5722"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+             
+            />
+           
+         
+           
+           
+           <TextView 
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/about"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT"
+           
+             
+            />
+
+           
+               </RelativeLayout>
+           </ScrollView>
+
+</RelativeLayout>

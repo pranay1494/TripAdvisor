@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ScrollView
+               android:id="@+id/scrollView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/hotel_bright" />
+    
+     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/white_navi"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_alignBottom="@id/hotel_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-32dp"
+        />
+     
+     <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/camera"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        android:layout_toLeftOf="@id/navigation"
+        android:layout_alignBottom="@id/hotel_image"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="-32dp"
+        />
+     
+     
+     
+
+     <TextView
+         android:id="@+id/hotel_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/hotel_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+         android:text="Large Text"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+     
+     <TextView 
+            android:id="@+id/hotel_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Shopping"
+            android:textColor="#FF5722"/>
+         
+         
+           
+           <TextView 
+            android:id="@+id/room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_type"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Room Types"
+            android:textColor="#FF5722"/>
+           
+           <TextView 
+            android:id="@+id/room_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Free"
+            />
+           
+           <TextView 
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Address"
+            android:textColor="#FF5722"/>
+
+           
+           <TextView 
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="normal"
+            android:text="Free"
+            />
+           
+           
+           
+               </RelativeLayout>
+           </ScrollView>
+
+</RelativeLayout>

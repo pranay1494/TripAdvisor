@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/db1_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+  
+            <com.example.tripadvisor.Custom_recycler_view
+            xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+      
+       />
+  
+        
+        <RelativeLayout
+             android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+  
+        android:orientation="vertical" 
+       
+        >
+        
+            <Button
+  android:id="@+id/buttonBar"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:textAppearance="?android:attr/textAppearanceLarge"
+  android:background="#F44336"
+
+ android:layout_alignParentBottom="true"
+  android:textColor="@android:color/white"
+  android:text="Nearby"/>
+            
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="-32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonBar"
+        
+         fab:fab_size="normal"
+        fab:fab_addButtonColorNormal="@color/red"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
+       >
+        
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/shopping"
+            fab:fab_colorNormal="@color/white"
+             fab:fab_size="mini"
+            fab:fab_colorPressed="@color/white_pressed"/>
+        
+        
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             fab:fab_size="mini"
+            fab:fab_icon="@drawable/activities"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/eatry"
+            fab:fab_colorNormal="@color/white"
+             fab:fab_size="mini"
+            fab:fab_colorPressed="@color/white_pressed"/>
+        
+         <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/bank"
+            
+            fab:fab_colorNormal="@color/white"
+            fab:fab_size="mini"
+            fab:fab_colorPressed="@color/white_pressed"/>
+         
+         <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/car_rental"
+            
+            fab:fab_colorNormal="@color/white"
+            fab:fab_size="mini"
+            fab:fab_colorPressed="@color/white_pressed"/>
+        
+        
+           </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    
+
+         
+              </RelativeLayout>
+     
+    
+        
+       
+  
+  
+
+  
+    
+        
+          
+            
+ 
+    
+        
+  
+           
+         </RelativeLayout>
+    
+    
+    <!-- 
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cow"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="3" />
+    </LinearLayout>
+    
+      
+    
+     -->
+    
+

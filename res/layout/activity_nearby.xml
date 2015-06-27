@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/india1"
+    tools:context="com.example.tripadvisor.NearbyActivity" >
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/upa"
+            android:height="10dp"
+            android:width="10dp" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="@drawable/unnamed">
+
+            <Button
+                android:id="@+id/Activities"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tto"
+                android:height="10dp"
+                android:text="Activities"
+                android:width="10dp" />
+
+            <Button
+                android:id="@+id/Eatries"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignLeft="@+id/Activities"
+                android:layout_below="@+id/Activities"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/mealplanicon"
+                android:height="10dp"
+                android:width="10dp" />
+
+            <Button
+                android:id="@+id/ATM"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignLeft="@+id/Eatries"
+                android:layout_below="@+id/Eatries"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/at"
+                android:height="10dp"
+                android:width="10dp" />
+
+            <Button
+                android:id="@+id/Shopping"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignLeft="@+id/ATM"
+                android:layout_below="@+id/ATM"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/shop"
+                android:height="10dp"
+                android:width="10dp" />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>

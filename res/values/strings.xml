@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trip Advisor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="itinerary" 
+        >
+        <item>One-Day Itinerary</item>
+           <item>Two-Day Itinerary</item>
+              <item>Three-Day Itinerary</item>
+        
+    </string-array>
+    
+   
+    <string name="str_btn_find">Find</string>
+
+    <string-array name="place_type">
+        <item>restaurant</item>
+        <item>bakery</item>
+        <item>cafe</item>
+        <item>bar</item>
+    </string-array>
+    <string-array name="place_type_name">
+        <item>Restaurant</item>
+        <item>Bakery</item>
+        <item>Cafe</item>
+        <item>Bar</item>
+    </string-array>
+    <string-array name="place_type4">
+        <item>shopping_mall</item>
+        <item>clothing_store</item>
+        <item>shoe_store</item>
+        <item>grocery_or_supermarket</item>
+        <item>jewelry_store</item>
+    </string-array>
+    <string-array name="place_type_name4">
+        <item>Malls</item>
+        <item>Clothes</item>
+        <item>Shoes</item>
+        <item>Supermarket</item>
+        <item>Jewlery</item>
+    </string-array>
+    <string-array name="place_type3">
+        <item>atm</item>
+        <item>bank</item>
+    </string-array>
+    <string-array name="place_type_name3">
+        <item>Atm</item>
+        <item>Bank</item>
+    </string-array>
+    <string-array name="place_type1">
+        <item>amusement_park</item>
+        <item>aquarium</item>
+        <item>art_gallery</item>
+        <item>bowling_alley</item>
+        <item>campground</item>
+        <item>casino</item>
+        <item>church</item>
+        <item>hindu_temple</item>
+        <item>mosque</item>
+        <item>museum</item>
+        <item>night_club</item>
+        <item>zoo</item>
+        
+    </string-array>
+    <string-array name="place_type_name1">
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Bowling Alley</item>
+        <item>Campground</item>
+        <item>Casino</item>
+        <item>Church</item>
+        <item>Hindu Temple</item>
+        <item>Mosque</item>
+        <item>Museum</item>
+        <item>Night Club</item>
+        <item>Zoo</item>
+    </string-array>
+
+    <string name="get_data">Get List</string>
+    <string name="get">Filter</string>
+    <string name="get1">Get Directions</string>
+    
+    
+    <string name="searchPrompt">Enter Search Query</string>
+    <string name="title_activity_image_display">ImageDisplayActivity</string>
+    <string name="title_activity_android_filter">AndroidFilterActivity</string>
+    
+    <string name="size_prompt">Choose a size</string>
+    <string name="color_prompt">Choose a color</string>
+    <string name="type_prompt">Choose a image type</string>
+    
+    <string-array name="size_arrays">
+        <item>none</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+    
+     <string-array name="color_arrays">
+        <item>none</item>
+        <item>black</item>
+        <item>red</item>
+        <item>blue</item>
+        <item>green</item>
+        <item>yellow</item>
+        <item>pink</item>
+        <item>brown</item>
+    </string-array>
+    
+     <string-array name="type_arrays">
+        <item>none</item>
+        <item>face</item>
+        <item>photo</item>
+        <item>clipart</item>
+        <item>lineart</item>
+    </string-array>
+
+</resources>
